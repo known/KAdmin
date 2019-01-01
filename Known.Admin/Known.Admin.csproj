@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Entities\Application.cs" />
     <Compile Include="Initializer.cs" />
+    <Compile Include="PlatformRepository.cs" />
     <Compile Include="Repositories\ModuleRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Services\AppService.cs" />

@@ -12,7 +12,7 @@ namespace Known.Admin.Web
         {
             Environment.CurrentDirectory = HttpRuntime.AppDomainAppPath;
             Container.Register<IJsonProvider, JsonProvider>();
-            //Initializer.Initialize(Known.Context.Create());
+            Initializer.Initialize(Known.Context.Create());
             WebMvcConfig.Register();
         }
 

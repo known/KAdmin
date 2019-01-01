@@ -1,13 +1,17 @@
-﻿using System.Collections.Generic;
+﻿using Known.Mapping;
 
 namespace Known.Admin.Entities
 {
-    public class Department
+    [Table("t_plt_departments", "部门")]
+    public class Department : BaseEntity
     {
-        public string Id { get; set; }
-        public Department Parent { get; set; }
+        [StringColumn("parent_id", "上级部门ID", 1, 50)]
+        public string ParentId { get; set; }
+
+        [StringColumn("name", "部门名称", 1, 50, true)]
         public string Name { get; set; }
-        public User Manager { get; set; }
-        public List<Department> Children { get; set; }
+
+        [StringColumn("parent_id", "部门主管ID", 1, 50)]
+        public string ManagerId { get; set; }
     }
 }

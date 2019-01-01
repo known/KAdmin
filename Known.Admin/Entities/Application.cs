@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Known.Mapping;
+﻿using Known.Mapping;
 
 namespace Known.Admin.Entities
 {
@@ -17,7 +16,5 @@ namespace Known.Admin.Entities
 
         [StringColumn("description", "描述", 1, 500)]
         public string Description { get; set; }
-
-        public virtual List<Module> Modules { get; set; }
     }
 }

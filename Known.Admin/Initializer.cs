@@ -1,4 +1,6 @@
-﻿namespace Known.Admin
+﻿using Known.Platform;
+
+namespace Known.Admin
 {
     public sealed class Initializer
     {
@@ -6,6 +8,7 @@
         {
             var assembly = typeof(Initializer).Assembly;
             Container.Register<ServiceBase>(assembly, context);
+            Container.Register<IPlatformRepository, PlatformRepository>(new PlatformRepository(context.Database));
         }
     }
 }

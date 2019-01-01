@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Web;
-using Known.Serialization;
 using Known.WebApi;
-using Known.WebApi.Providers;
 
 namespace Known.Admin.Api
 {
@@ -10,10 +8,8 @@ namespace Known.Admin.Api
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            Environment.CurrentDirectory = HttpRuntime.AppDomainAppPath;
-            Container.Register<IJsonProvider, JsonProvider>();
-            //Initializer.Initialize(Known.Context.Create());
             WebApiConfig.Register();
+            Initializer.Initialize();
         }
 
         protected void Application_Error(object sender, EventArgs e)

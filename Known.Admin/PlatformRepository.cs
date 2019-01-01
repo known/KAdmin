@@ -10,7 +10,7 @@ namespace Known.Admin
         {
         }
 
-        public string GetApiUrl(string apiId)
+        public string GetApiBaseUrl(string apiId)
         {
             var apiUrl = string.Empty;
             if (apiId == "plt")

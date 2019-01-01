@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Web;
-using Known.Serialization;
 using Known.WebMvc;
-using Known.WebMvc.Providers;
 
 namespace Known.Admin.Web
 {
@@ -10,10 +7,8 @@ namespace Known.Admin.Web
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            Environment.CurrentDirectory = HttpRuntime.AppDomainAppPath;
-            Container.Register<IJsonProvider, JsonProvider>();
-            Initializer.Initialize(Known.Context.Create());
             WebMvcConfig.Register();
+            Initializer.Initialize();
         }
 
         protected void Application_Error(object sender, EventArgs e)

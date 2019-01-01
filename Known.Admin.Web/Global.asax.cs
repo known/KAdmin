@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Web;
-using Known.Providers;
 using Known.Serialization;
 using Known.WebMvc;
+using Known.WebMvc.Providers;
 
 namespace Known.Admin.Web
 {

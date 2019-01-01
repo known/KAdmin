@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Web;
-using Known.Providers;
 using Known.Serialization;
 using Known.WebApi;
+using Known.WebApi.Providers;
 
 namespace Known.Admin.Api
 {

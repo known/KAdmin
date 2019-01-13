@@ -42,8 +42,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Known">
-      <HintPath>..\Library\Known.dll</HintPath>
+    <Reference Include="Known, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Known.1.0.1\lib\net461\Known.dll</HintPath>
     </Reference>
     <Reference Include="Known.WebApi">
       <HintPath>..\Library\Known.WebApi.dll</HintPath>
@@ -79,6 +79,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

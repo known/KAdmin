@@ -7,8 +7,8 @@
     <ProjectGuid>{C9A9D3EB-4AE0-4026-827F-8B47CB6B8027}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Known.Admin</RootNamespace>
-    <AssemblyName>Known.Admin</AssemblyName>
+    <RootNamespace>Known.Core</RootNamespace>
+    <AssemblyName>Known.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

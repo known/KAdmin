@@ -1,4 +1,6 @@
-﻿using Known.Mapping;
+﻿using Known.Data;
+using Known.Mapping;
+using Known.Platform;
 
 namespace Known.Core
 {

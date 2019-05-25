@@ -8,6 +8,7 @@ namespace Known.WebMvc
         {
             WebMvcConfig.Register();
 
+            Container.Register<IJson, JsonProvider>();
             Platform.Initializer.Initialize();
             Core.Initializer.Initialize();
         }

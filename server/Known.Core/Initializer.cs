@@ -10,6 +10,8 @@ namespace Known.Core
         {
             var assembly = typeof(Initializer).Assembly;
             EntityHelper.InitMapper(assembly);
+
+            Container.Register<ServiceBase>(assembly, Context.Create());
         }
     }
 }

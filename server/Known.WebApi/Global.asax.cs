@@ -2,14 +2,18 @@
 
 namespace Known.WebApi
 {
+    /// <summary>
+    /// 应用程序全局类。
+    /// </summary>
     public class Global : System.Web.HttpApplication
     {
         protected void Application_Start(object sender, EventArgs e)
         {
             WebApiConfig.Register();
 
+            var context = Known.Context.Create();
             Platform.Initializer.Initialize();
-            Core.Initializer.Initialize();
+            Core.Initializer.Initialize(context);
         }
 
         protected void Application_Error(object sender, EventArgs e)

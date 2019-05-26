@@ -1,7 +1,8 @@
 ﻿using Known.Core.Services;
 using Known.Web;
+using Known.WebApi;
 
-namespace Known.WebApi.Controllers.Develop
+namespace Known.Core.Controllers
 {
     public class DevToolController : ApiControllerBase
     {

@@ -1,17 +1,21 @@
-﻿using Known.Data;
-using Known.Mapping;
-using Known.Platform;
+﻿using Known.Mapping;
 
 namespace Known.Core
 {
+    /// <summary>
+    /// 框架模块初始化者。
+    /// </summary>
     public sealed class Initializer
     {
-        public static void Initialize()
+        /// <summary>
+        /// 初始化模块。
+        /// </summary>
+        public static void Initialize(Context context)
         {
             var assembly = typeof(Initializer).Assembly;
             EntityHelper.InitMapper(assembly);
 
-            Container.Register<ServiceBase>(assembly, Context.Create());
+            Container.Register<ServiceBase>(assembly, context);
         }
     }
 }

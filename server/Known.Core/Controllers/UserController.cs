@@ -1,8 +1,9 @@
 ﻿using System.Web.Http;
 using Known.Platform;
 using Known.Web;
+using Known.WebApi;
 
-namespace Known.WebApi.Controllers
+namespace Known.Core.Controllers
 {
     public class UserController : ApiControllerBase
     {

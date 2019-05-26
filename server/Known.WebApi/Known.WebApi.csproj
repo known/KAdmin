@@ -251,12 +251,6 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="Code\WebApiConfig.cs" />
     <Compile Include="Code\WebApiController.cs" />
-    <Compile Include="Controllers\DemoController.cs" />
-    <Compile Include="Controllers\Develop\DevDemoController.cs" />
-    <Compile Include="Controllers\Develop\DevToolController.cs" />
-    <Compile Include="Controllers\System\ModuleController.cs" />
-    <Compile Include="Controllers\System\RoleController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

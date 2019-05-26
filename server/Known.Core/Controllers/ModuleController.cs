@@ -3,8 +3,9 @@ using Known.Core.Services;
 using Known.Extensions;
 using Known.Platform;
 using Known.Web;
+using Known.WebApi;
 
-namespace Known.WebApi.Controllers.System
+namespace Known.Core.Controllers
 {
     public class ModuleController : ApiControllerBase
     {

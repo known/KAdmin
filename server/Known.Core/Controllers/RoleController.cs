@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Known.WebApi;
 
-namespace Known.WebApi.Controllers.System
+namespace Known.Core.Controllers
 {
     public class RoleController : ApiControllerBase
     {

@@ -12,7 +12,6 @@ namespace Known.WebApi
             WebApiConfig.Register();
 
             var context = Known.Context.Create();
-            Platform.Initializer.Initialize();
             Core.Initializer.Initialize(context);
         }
 

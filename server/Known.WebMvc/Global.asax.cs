@@ -8,8 +8,8 @@ namespace Known.WebMvc
         {
             WebMvcConfig.Register();
 
-            Platform.Initializer.Initialize();
-            Core.Initializer.Initialize();
+            var context = Known.Context.Create();
+            Core.Initializer.Initialize(context);
         }
 
         protected void Application_Error(object sender, EventArgs e)

@@ -51,7 +51,7 @@
 
             //grid
             this.grid = new Grid('Module', {
-                url: '/api/Module/QueryModules',
+                url: '/api/Module/QueryDatas',
                 idField: 'Id', sortField: 'Sort', sortOrder: 'asc',
                 multiSelect: true, showToolbar: true
             });
@@ -87,7 +87,7 @@
 
         delete: function () {
             var _this = this;
-            this.grid.deleteRows('/api/Module/DeleteModules', function () {
+            this.grid.deleteRows('/api/Module/DeleteDatas', function () {
                 _this.refreshView();
             });
         },

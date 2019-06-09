@@ -459,13 +459,9 @@
   <ItemGroup>
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\DevelopController.cs" />
-    <Compile Include="Controllers\Develop\DevDemoController.cs" />
-    <Compile Include="Controllers\Develop\DevToolController.cs" />
     <Compile Include="Controllers\FrameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SystemController.cs" />
-    <Compile Include="Controllers\System\ModuleController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -523,12 +519,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\libs\miniui\themes\pure\images\button\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Known.Core\Known.Core.csproj">
-      <Project>{c9a9d3eb-4ae0-4026-827f-8b47cb6b8027}</Project>
-      <Name>Known.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

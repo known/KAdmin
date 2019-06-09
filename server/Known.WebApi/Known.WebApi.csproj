@@ -269,12 +269,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Known.Core\Known.Core.csproj">
-      <Project>{c9a9d3eb-4ae0-4026-827f-8b47cb6b8027}</Project>
-      <Name>Known.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

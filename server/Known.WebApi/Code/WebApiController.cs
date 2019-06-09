@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Http;
+using Known.Core;
 using Known.Extensions;
-using Known.Platform;
 using Known.Web;
 
 namespace Known.WebApi
@@ -12,18 +12,18 @@ namespace Known.WebApi
         [HttpGet, Route("{module}/{method}")]
         public object Get(string module, string method)
         {
-            if (module == "User" && method == "GetModules")
-            {
-                var menus = Menu.GetUserMenus(PlatformService, UserName);
-                var codes = Code.GetCodes(PlatformService);
-                return ApiResult.ToData(new { menus, codes });
-            }
+            //if (module == "User" && method == "GetModules")
+            //{
+            //    var menus = Menu.GetUserMenus(PlatformService, UserName);
+            //    var codes = Code.GetCodes(PlatformService);
+            //    return ApiResult.ToData(new { menus, codes });
+            //}
 
-            if (module == "Module" && method == "GetTreeDatas")
-            {
-                var menus = Menu.GetTreeMenus(PlatformService);
-                return ApiResult.ToData(menus);
-            }
+            //if (module == "Module" && method == "GetTreeDatas")
+            //{
+            //    var menus = Menu.GetTreeMenus(PlatformService);
+            //    return ApiResult.ToData(menus);
+            //}
 
             var queries = HttpUtility.ParseQueryString(Request.RequestUri.Query);
             var executor = new ServiceExecuter(UserName, module, method);

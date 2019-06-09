@@ -2,7 +2,6 @@
 using System.Web;
 using System.Web.Http;
 using Known.Web;
-using Known.WebApi.Filters;
 
 namespace Known.WebApi
 {

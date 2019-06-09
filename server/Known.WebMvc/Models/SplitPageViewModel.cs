@@ -1,5 +1,5 @@
-﻿using Known.Extensions;
-using Known.Platform;
+﻿using Known.Core;
+using Known.Extensions;
 
 namespace Known.WebMvc.Models
 {

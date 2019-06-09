@@ -13,13 +13,13 @@ namespace Known.WebMvc.Controllers
 
             switch (module.ViewType)
             {
-                case Known.Platform.ViewType.DataGridView:
+                case Known.Core.ViewType.DataGridView:
                     return View("DataGridView", new DataGridViewModel(module));
-                case Known.Platform.ViewType.TreeGridView:
+                case Known.Core.ViewType.TreeGridView:
                     return View("TreeGridView", new TreeGridViewModel(module));
-                case Known.Platform.ViewType.TabPageView:
+                case Known.Core.ViewType.TabPageView:
                     return View("TabPageView", new TabPageViewModel(module));
-                case Known.Platform.ViewType.SplitPageView:
+                case Known.Core.ViewType.SplitPageView:
                     return View("SplitPageView", new SplitPageViewModel(module));
                 default:
                     return View(module);

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Web.Mvc;
+using Known.Core;
 using Known.Extensions;
-using Known.Platform;
 using Known.Web;
 using Newtonsoft.Json;
 
@@ -14,12 +14,12 @@ namespace Known.WebMvc.Controllers
         [HttpGet, Route("{apiId}/{module}/{method}")]
         public ActionResult Get(string apiId, string module, string method)
         {
-            if (module == "User" && method == "GetModules")
-            {
-                var menus = Menu.GetUserMenus(PlatformService, UserName);
-                var codes = Code.GetCodes(PlatformService);
-                return JsonResult(new { menus, codes });
-            }
+            //if (module == "User" && method == "GetModules")
+            //{
+            //    var menus = Menu.GetUserMenus(PlatformService, UserName);
+            //    var codes = Code.GetCodes(PlatformService);
+            //    return JsonResult(new { menus, codes });
+            //}
 
             var api = GetApiClient(apiId);
             return Get(api, module, method);
@@ -28,11 +28,11 @@ namespace Known.WebMvc.Controllers
         [HttpPost, Route("{apiId}/{module}/{method}")]
         public ActionResult Post(string apiId, string module, string method)
         {
-            if (module == "Module" && method == "GetTreeDatas")
-            {
-                var menus = Menu.GetTreeMenus(PlatformService);
-                return JsonResult(menus);
-            }
+            //if (module == "Module" && method == "GetTreeDatas")
+            //{
+            //    var menus = Menu.GetTreeMenus(PlatformService);
+            //    return JsonResult(menus);
+            //}
 
             var api = GetApiClient(apiId);
             if (method.StartsWith("Query"))

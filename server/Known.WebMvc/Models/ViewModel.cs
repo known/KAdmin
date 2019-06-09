@@ -1,4 +1,4 @@
-﻿using Known.Platform;
+﻿using Known.Core;
 
 namespace Known.WebMvc.Models
 {

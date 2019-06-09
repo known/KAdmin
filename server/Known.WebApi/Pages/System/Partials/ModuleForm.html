@@ -141,7 +141,7 @@
                 return;
 
             var data = _this.form.getData();
-            Ajax.action('保存', '/api/Module/SaveModule', data, function (id) {
+            Ajax.action('保存', '/api/Module/SaveData', data, function (id) {
                 _this.initForm({ Id: id });
                 _this.option.callback();
             });
@@ -154,7 +154,7 @@
             if (data.Id === '') {
                 _this.form.setData(data);
             } else {
-                Ajax.getJson('/api/Module/GetModule', {
+                Ajax.getJson('/api/Module/GetData', {
                     id: data.Id
                 }, function (result) {
                     _this.form.setData(result, function (f, d) {
